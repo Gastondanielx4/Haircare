@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haircare</title>
+    <link rel="stylesheet" href="normalize.css"-->
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;600&display=swap" rel="stylesheet">
+    <body>
+        <header>
+            <div class="logo-nav-hamburguesa">
+                <p class="logo">Haircare</p>
+                <div class="contenedor_hamburguesa">
+                    <button type="button">
+                        <span class="top_line"></span>
+                        <span class="middle_line"></span>
+                        <span class="bottom_line"></span>
+                    </button>
+                    <script>
+                        const nav = document.querySelector('.contenedor_hamburguesa button')
+                        nav.addEventListener('click', e => {
+                            nav.classList.toggle('open');
+                        });
+                    </script>
+                </div>
+            </div>
+            <div class="logo-nav">
+                <p class="logo">Haircare</p>
+                <nav class="navegador">
+                    <ul>
+                        <li> <a class="home" href="#">HOME</a></li>
+                        <li> <a class="nav_normal" href="#">SERVICES</a></li>
+                        <li> <a class="nav_normal" href="#">GALLERY</a></li>
+                        <li> <a class="nav_normal" href="#">ABOUT</a></li>
+                        <li> <a class="nav_normal" href="#">BLOG</a></li>
+                        <li> <a class="nav_normal" href="#">CONTACT</a></li>
+                    </ul>
+                </nav>    
+            </div>          
+            <div class="bienvenida-slogan">
+                <p class="bienvenida">WELCOME TO HAIRCARE</p>
+                <P class="slogan">WE ARE PROFESSIONAL <br> CARE FOR YOUR HAIR</P>
+                <div class="book"><a href="#">Book now</a></div>
+            </div>
+        </header>
+        <main>
+            <div class="main_1">
+                <div class="men">
+                    <div class="men_1">
+                        <p>For Men</p>
+                        <div class="pricing"><a href="#">See pricing &#8594</a></div>
+                    </div>
+                </div>
+                <div class="nuestro_salon">
+                    <img src="img/logo_haircare.png" alt="">
+                    <p class="haircare">Haircare</p>
+                    <p class="bienvenida_salon">WELCOME TO OUR SALON</p>
+                    <p class="texto_nuestro_salon">A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                    <div class="read_more"><a href="#">Read more</a></div>
+                </div>
+                <div class="women">
+                        <div class="women_1">
+                            <p>For Women</p>
+                            <div class="pricing"><a href="#">See pricing &#8594</a></div>
+                        </div>
+                </div>
+            </div>
+            <div class="main_2">
+                <div class="servicios">
+                    <p class="subtitulo_servicios">SERVICES</p>
+                    <p class="titulo_servicios">SERVICES MENU</p>
+                    <p class="texto_main_2">For far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
+                </div>
+                <div class="los_4_servicios">
+                    <div class="servicios_individuales">
+                        <img src="img/haircut.png" alt="">
+                        <p class="titulo_4_servicios">Haircut & Styling</p>
+                        <p class="texto_main_2a">A small river named Duden flows by their place and supplies</p>
+                    </div>
+                    <div class="servicios_individuales">
+                        <img src="img/beard1.png" alt="">
+                        <p class="titulo_4_servicios">Beard</p>
+                        <p class="texto_main_2a">A small river named Duden flows by their place and supplies</p>
+                    </div>
+                    <div class="servicios_individuales">
+                        <img src ="img/makeup.png" alt="">
+                        <p class="titulo_4_servicios">Makeup</p>
+                        <p class="texto_main_2a">A small river named Duden flows by their place and supplies</p>
+                    </div>
+                    <div class="servicios_individuales">
+                        <img src="img/bodytreatment.png" alt="">
+                        <p class="titulo_4_servicios">Body Treatment</p>
+                        <p class="texto_main_2a">A small river named Duden flows by their place and supplies</p>
+                    </div>
+                </div>
+            </div>
+            <div class="main_3">
+                <div class="formulario">
+                    <p class="subtitulo_formulario">BOOKING</p>
+                    <p class="titulo_formulario">MAKE AN APPOINTMENT</p>
+                    <p class="texto_main_3">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
+                </div>
+                <div class="campos_formulario">
+                    <form action="">
+                        <div class="linea_1">
+                            <input class="cada_campo_formulario" type="text" placeholder="Name" >
+                            <input class="cada_campo_formulario" type="email" placeholder="Email" >
+                        </div>
+                        <div class="linea_2">
+                            <input class="cada_campo_formulario" type="text" placeholder="Date" >
+                            <input class="cada_campo_formulario" type="text" placeholder="Time" >
+                        </div>
+                        <div class="linea_3">
+                            <input class="cada_campo_formulario" type="text" placeholder="Professional Makeup" >
+                            <input class="cada_campo_formulario" type="text" placeholder="Phone">
+                        </div>
+                        <textarea name="" id="campo_textarea" cols="30" rows="10" placeholder="Message"></textarea>
+                        <input type="submit" value="Make an Appointment">
+                    </form>
+                </div>
+            </div>
+            <div class="main_4">
+                <div class="artistas">
+                    <p class="subtitulo_artistas">ARTISTIC DIRECTOR</p>
+                    <p class="titulo_artistas">MAKEUP ARTIST</p>
+                    <p class="texto_main_4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
+                </div>
+                <div class="imagenes_artistas">
+                    <div class="img_artistas_2">
+                        <div class="nombre_artista">                            
+                            <p class="nombre">NICOLE SIMON</p>
+                            <p class="funcion">NAIL MASTER</p>
+                        </div>
+                    </div>
+                    <div class="img_artistas_3">
+                        <div class="nombre_artista">                            
+                            <p class="nombre">CLOE MEYER</p>
+                            <p class="funcion">DIRECTOR</p>
+                        </div>                     
+                    </div>
+                    <div class="img_artistas_4">
+                        <div class="nombre_artista">                            
+                            <p class="nombre">RACHEL CLINTON</p>
+                            <p class="funcion">HAIR STYLIST</p>
+                        </div>
+                    </div>
+                    <div class="img_artistas_5">
+                        <div class="nombre_artista">                            
+                            <p class="nombre">DAVE BUFF</p>
+                            <p class="funcion">BARBER</p>
+                        </div>
+                    </div>                      
+                </div>
+            </div>
+            <div class="main_5">
+                <div class="galeria">
+                    <p class="subtitulo_galeria">GALLERY</p>
+                    <p class="titulo_galeria">OUR GALLERY</p>
+                    <p class="texto_main_5">Separated they live in. A small river named Duden flows by their place <br> and supplies it with the necessary regelialia.</p>
+                </div>
+                <div class="imagenes_galeria">
+                    <img src="img/work-1.jpg" alt="">
+                    <img src="img/work-2.jpg" alt="">
+                    <img src="img/work-3.jpg" alt="">
+                    <img src="img/work-4.jpg" alt="">
+                    <img src="img/work-5.jpg" alt="">
+                    <img src="img/work-6.jpg" alt="">
+                    <img src="img/work-7.jpg" alt="">
+                    <img src="img/work-8.jpg" alt="">
+                </div>
+            </div>
+            <div class="main_6">
+                <div class="precios">
+                    <p class="subtitulo_precios">PRICING</p>
+                    <p class="titulo_precios">OUR PRICES</p>
+                    <p class="texto_main_6">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
+                </div>
+                <div class="preciosxservicios">
+                    <div class="cuadro">
+                        <p class="tiposervicio">HAIR STYLE</p>
+                        <div class="precioxsession">
+                            <p class="precioxsession1">$50.00</p>
+                            <p class="session">/ session</p>
+                        </div>
+                        <ul>
+                            <li class="gris">Hair Dryer</li>
+                            <li>Hair Coloring</li>
+                            <li class="gris">Hair cut</li>
+                            <li>Hair Dresser</li>
+                            <li class="gris">Hair Spa</li>
+                            <li class="oferta"><a href="#">Get Offer</a></li>
+                        </ul>
+                    </div>
+                    <div class="cuadro">
+                        <p class="tiposervicio">MANICURE PEDICURE</p>
+                        <div class="precioxsession">
+                            <p class="precioxsession1">$34.50</p>
+                            <p class="session">/ session</p>
+                        </div>
+                        <ul>
+                            <li class="gris">Manicure</li>
+                            <li>Pedicure</li>
+                            <li class="gris">Coloring</li>
+                            <li>Nails</li>
+                            <li class="gris">Nail Cut</li>
+                            <li class="oferta"><a href="#">Get Offer</a></li>
+                        </ul>
+                    </div>
+                    <div class="cuadro">
+                        <p class="tiposervicio">MAKEUP</p>
+                        <div class="precioxsession">
+                            <p class="precioxsession1">$54.50</p>
+                            <p class="session">/ session</p>
+                        </div>
+                        <ul>
+                            <li class="gris">Makeup</li>
+                            <li>Professional Makeeup</li>
+                            <li class="gris">Blush On</li>
+                            <li>Facial Massage</li>
+                            <li class="gris">Facial Spa</li>
+                            <li class="oferta"><a href="#">Get Offer</a></li>
+                        </ul>
+                    </div>
+                    <div class="cuadro">
+                        <p class="tiposervicio">BODY TREATMENT</p>
+                        <div class="precioxsession">
+                            <p class="precioxsession1">$89.50</p>
+                            <p class="session">/ session</p>
+                        </div>
+                        <ul>
+                            <li class="gris">Massage</li>
+                            <li>Spa</li>
+                            <li class="gris">Foot Spa</li>
+                            <li>Body Spa</li>
+                            <li class="gris">Relaxing</li>
+                            <li class="oferta"><a href="#">Get Offer</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="main_7">
+                <div class="imagen_main_7">
+                    <img src="img/work-7.jpg" alt="">
+                </div>
+                <div class="testimony">
+                    <p class="subtitulo_testimony">TESTIMONY</p>
+                    <p class="titulo_testimony">HAPPY CUSTOMER</p>
+                    <p class="texto_main_7">Far far away, behind the word mountains, far from the countries <br> Vokalia and Consonantia,there live the blind texts.</p>
+                    <div class="businessman">
+                        <img src="img/stylist-3.jpg" alt="">
+                        <div class="businessman1">
+                            <p class="nombre_businessman">Jeff Nucci</p>
+                            <p class="cargo_businessman">BUSINESSMAN</p>
+                        </div>    
+                    </div>
+                </div>
+            </div>  
+        </main>
+        <footer>
+            <div class="contenido_footer">
+                <div class="haircare_footer">
+                    <p class="titulo_footer"> HAIRCARE</p>
+                    <p class="texto_footer">Far far away, behind the word <br> mountains, far from the countries <br> Vokalia and Consonantia,there <br> live the blind texts.</p>
+                    <div class="links_redes">
+                        <a href="#"><img src="img/twitter.png" alt=""></a>
+                        <a href="#"><img src="img/facebook.png" alt=""></a>
+                        <a href="#"><img src="img/instagram.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="information_footer">
+                    <p class="titulo_footer">INFORMATION</p> 
+                    <ul class="lista_footer">
+                        <li><a class="texto_footer"href="#">FAQs</a></li>
+                        <li><a class="texto_footer"href="#">Privacy</a></li>
+                        <li><a class="texto_footer"href="#">Terms Condition</a></li>
+                    </ul>                    
+                </div>
+                <div class="menu_footer">
+                    <p class="titulo_footer">LINKS</p>
+                    <ul>
+                        <li> <a class="texto_footer" href="#">Home</a></li>
+                        <li> <a class="texto_footer" href="#">About</a></li>
+                        <li> <a class="texto_footer" href="#">Services</a></li>
+                        <li> <a class="texto_footer" href="#">Work</a></li>
+                        <li> <a class="texto_footer" href="#">Blog</a></li>
+                        <li> <a class="texto_footer" href="#">Contact</a></li>
+                        
+                    </ul>
+                </div>
+                <div class="have_a_questions">
+                    <p class="titulo_footer">HAVE A QUESTIONS?</p>
+                    <div class="datos_contacto">
+                        <div class="ubicacion">
+                            <img src="img/UBICACION.png" alt="">
+                            <p class="texto_footer">203 Fake St. Mountain View, <br> San Francisco, California, <br> USA</p>
+                        </div>
+                        <div class="telefono">
+                            <img src="img/TELEFONO.png" alt="">
+                            <p>+2 392 3929 210</p>
+                        </div>
+                        <div class="email">
+                            <img src="img/CORREO.png" alt="">
+                            <p>info@yourdomain.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="derechos">
+                <p class="texto_footer">Copyright &#169;2021 All rights reserved | This template is made with by Colorlib</p>
+            </div>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,870 @@
+/* 
+PROFESSIONAL
+font-family: 'Oswald', sans-serif;
+NAV
+font-family: 'Inter', sans-serif;
+TEXTO
+font-family: 'Poppins', sans-serif;
+*/
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: rgba(245, 242, 234, 1);
+}
+header {
+    margin: 0px;
+    height: 58rem;
+    background: url(img/bg-2.jpg);
+    background-color: rgba(0, 0, 0, 0.568);
+    background-blend-mode:soft-light ;
+    background-position: center;
+    background-size: 119rem auto ;
+    color: white;
+}
+@media screen and (max-width: 715px) {
+    header{
+        height: 45rem;
+    }
+}
+.navegador ul{
+    margin: 0px;
+    list-style-type: none;
+    padding: 0px;
+    font-family: 'Inter', sans-serif;
+    font-size:1rem;
+    display: flex;
+    flex-direction: row;   
+}
+.logo-nav-hamburguesa{
+    display: none;
+}
+.contenedor_hamburguesa button{
+    background: none;
+    border: 0px;
+    cursor: pointer;
+    padding: 0;
+    width: 60px;
+    height: 60px;
+}
+.contenedor_hamburguesa button span{
+    border-radius: 5px;
+    background-color: white;
+    display: block;
+    width: 60%;
+    margin: 5px auto;
+    height: 2px;
+
+    animation-duration:1s;
+    animation-fill-mode: forwards;
+}
+.contenedor_hamburguesa button.open .top_line{
+    animation-name: top-line-animation;
+}
+.contenedor_hamburguesa button.open .middle_line{
+    animation-name: middle-line-animation;
+}
+.contenedor_hamburguesa button.open .bottom_line{
+    animation-name: bottom-line-animation;
+}
+.contenedor_hamburguesa button .top_line{
+    animation-name: top-line-animation-close;
+}
+.contenedor_hamburguesa button .middle_line{
+    animation-name: middle-line-animation-close;
+}
+.contenedor_hamburguesa button .bottom_line{
+    animation-name: bottom-line-animation-close;
+}
+@keyframes top-line-animation{
+    50%, 100%{
+        margin: 0 auto;
+        transform: translateY(2px) rotate(-45deg);
+    }
+}
+@keyframes bottom-line-animation{
+    50%, 100%{
+        margin: 0 auto;
+        transform: translateY(-2px) rotate(45deg);
+    }
+}
+@keyframes middle-line-animation{
+    20%, 100%{
+        margin: 0 auto;
+        width: 0;
+        opacity: 0;
+    }
+}
+.logo-nav{
+    padding: 1.5rem;
+    margin: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.logo { 
+    margin: 0px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 1.3rem;   
+}
+@media screen and (max-width: 970px) {
+    .logo-nav-hamburguesa{
+        background-color: black;
+        height: 3rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 1rem;
+    }
+    .logo-nav{
+        display: none;
+    }
+}
+.navegador ul{
+    margin: 0px;
+    list-style-type: none;
+    padding: 0px;
+    font-family: 'Inter', sans-serif;
+    font-size:1rem;
+    display: flex;
+    flex-direction: row;   
+}
+.home {
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color:  rgba(191, 146, 91, 1);
+}
+.nav_normal {
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: white;
+}
+.navegador ul li{
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+.bienvenida-slogan{
+    margin-top: 9rem;    
+}
+.bienvenida {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color:  rgba(191, 146, 91, 1);
+    font-size: 1.1rem;
+    display: flex;
+    justify-content: center;
+}   
+.slogan {
+    font-family: 'Oswald', sans-serif;
+    margin: 0px;
+    font-size: 7.5rem;
+    text-align: center;
+}
+@media screen and (max-width: 1108px) {
+    .slogan{
+        font-size: 5rem;
+    }
+}
+@media screen and (max-width: 730px) {
+    .slogan{
+        font-size: 3rem;
+    }
+}
+.slogan p {
+    margin: 0px;
+}
+.book{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+.book a {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 0.75rem 1.5rem 0.75rem 1.5rem;
+    text-decoration: none;
+    border: 3px solid  rgba(191, 146, 91, 1);
+    color:  rgba(191, 146, 91, 1);
+}
+.main_1{
+    display: flex;
+    justify-content: space-around;
+}
+.men{
+    height: 532px;
+    width: 100%;
+    background: url(img/formen.jpg);
+    background-color: rgba(0, 0, 0, 0.473);
+    background-blend-mode:soft-light ;
+    background-size: cover;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.men_1{
+    border: 2px solid  rgba(191, 146, 91, 1);
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.men_1 p{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 1.4rem;
+    color: white;
+}
+.men_1 a{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 0.8rem;
+    text-decoration: none;
+    color: rgba(191, 146, 91, 1);
+}
+.nuestro_salon{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.haircare{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: black;
+    font-size: 1.5rem;
+}
+.bienvenida_salon{
+    padding-bottom: 4px;
+    padding-left: 6rem;
+    padding-right: 6rem;
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    color: black;
+    border-bottom: 2px solid  rgba(191, 146, 91, 1) ;
+}
+.texto_nuestro_salon {
+    font-family: 'Inter', sans-serif;
+    color: rgb(156, 146, 131);
+    font-size: 1rem;
+    padding: 1.5rem;
+    line-height: 2rem;
+}
+.read_more a{
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 0.5rem;
+    border: 3px solid  rgba(191, 146, 91, 1);
+    color: rgba(191, 146, 91, 1);
+}
+.women{
+    height: 532px;
+    width: 100%;
+    background: url(img/forwomen.jpg);
+    background-color: rgba(0, 0, 0, 0.473);
+    background-blend-mode:soft-light ;
+    background-size: cover;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.women_1{
+    border: 2px solid  rgba(191, 146, 91, 1);
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.women p{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 1.4rem;
+    color: white;
+}
+.women a{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 0.8rem;
+    text-decoration: none;
+    color: rgba(191, 146, 91, 1);
+}
+@media screen and (max-width: 1637px) {
+    .main_1{
+        flex-wrap: wrap;
+    }
+}
+.main_2{
+    padding-top: 6rem;
+    padding-bottom: 7rem ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.subtitulo_servicios{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: rgba(191, 146, 91, 1);
+    font-size: 1rem;
+}
+.titulo_servicios { 
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    font-size: 3rem;
+    color: black;
+}
+.texto_main_2{
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    color: rgb(156, 146, 131);
+    font-size: 1rem;
+    padding: 0.5rem;
+}
+.los_4_servicios {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+@media screen and (max-width: 723px) {
+    .los_4_servicios{
+        flex-wrap: wrap;
+    }
+}
+.titulo_4_servicios{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    color: black;
+}
+.texto_main_2a{
+    font-family: 'Inter', sans-serif;
+    color: rgb(156, 146, 131);
+    font-size: 1rem;
+    padding: 0rem 1.5rem;
+    line-height: 2rem;
+}
+.servicios_individuales{
+    width: 312px;
+}
+.main_3{
+    background-color: rgba(235, 232, 222, 1);
+    padding-top: 6rem;
+    padding-bottom: 7rem ;
+}
+.subtitulo_formulario{
+    display: flex;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: rgba(191, 146, 91, 1);
+    font-size: 0.9rem;
+}
+.titulo_formulario { 
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    font-size: 3.5rem;
+    color: black;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.texto_main_3{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    color: rgb(156, 146, 131);
+    font-size: 1rem;
+    padding: 0.5rem;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+textarea{
+    resize: none;
+}
+.cada_campo_formulario{
+    background-color: rgba(235, 232, 222, 1);
+    border-style:solid;
+    height: 3.5rem;
+    width: 30rem;
+    margin: 1rem;
+    border-radius: 5px;
+    border-color: rgba(191, 146, 91, 1);
+    outline: 0;
+    font-family: 'Inter', sans-serif;
+    padding-left: 1rem;
+}
+@media screen and (max-width: 523px) {
+    .cada_campo_formulario{
+        width: 20rem;
+    }
+}
+@media screen and (max-width: 1072px) {
+    form{
+        flex-wrap: wrap;
+       text-align: center;
+    }
+}
+@media screen and (max-width: 1072px) {
+    form{
+        flex-wrap: wrap;
+        text-align: center;
+    }
+}
+#campo_textarea{
+    background-color: rgba(235, 232, 222, 1);
+    border-style: solid;
+    height: 13rem;
+    width: 64rem;
+    margin: 1rem;
+    border-radius: 5px;
+    border-color: rgba(191, 146, 91, 1);
+    outline: 0;
+    padding-left: 1rem;
+    padding-top: 1rem;
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+}
+@media screen and (max-width: 1078px) {
+    #campo_textarea{
+        height: 26rem;
+        width: 30rem;
+    }
+}
+@media screen and (max-width: 523px) {
+    #campo_textarea{
+        height: 36rem;
+        width: 20rem;
+    }
+}
+input[type="submit"]{
+    background-color: rgba(191, 146, 91, 1);
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    height: 3.5rem;
+    width: 15rem;
+    border-style: none;
+    border: 0px;
+}
+::placeholder{
+    color: rgba(96, 71, 86, 1);
+    font-family: 'Inter', sans-serif;
+    padding-left: 1rem;
+    padding-top: 1rem;
+}
+.main_4{
+    padding-top: 6rem;
+    padding-bottom: 7rem ;
+}
+.subtitulo_artistas{
+    display: flex;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: rgba(191, 146, 91, 1);
+    font-size: 0.9rem;
+}
+.titulo_artistas { 
+    display: flex;
+    justify-content: center;
+    font-family: 'Oswald', sans-serif;
+    font-size: 3.5rem;
+    color: black;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.texto_main_4 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    color: rgb(156, 146, 131);
+    font-size: 1rem;
+    padding: 0.5rem;
+}
+.imagenes_artistas{
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+}
+@media screen and (max-width: 1826px){
+    .imagenes_artistas{
+        flex-wrap: wrap;
+    }    
+}
+.img_artistas_2 , .img_artistas_3, .img_artistas_4, .img_artistas_5 {
+    height: 28rem;
+    width: 27rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.img_artistas_2{
+    background: url(img/stylist-2.jpg);
+    background-size: 100%;
+}
+.img_artistas_3{
+    background: url(img/stylist-3.jpg);
+    background-size: 100%;
+}
+.img_artistas_4{
+    background: url(img/stylist-4.jpg);
+    background-size: 100%;
+}
+.img_artistas_5{
+    background: url(img/stylist-5.jpg);
+    background-size: 100%;
+}
+.nombre_artista{
+    width: 27rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(51, 51, 51, 1);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.nombre{   
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+}
+.funcion{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: rgba(191, 146, 91, 1);
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+}
+@media screen and (max-width: 1690px) {
+    .imagenes_artistas{
+       flex-wrap: wrap;
+    }
+}
+.main_5{
+    padding-top: 6rem;
+    padding-bottom: 7rem ;
+}
+.subtitulo_galeria{
+    display: flex;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: rgba(191, 146, 91, 1);
+    font-size: 0.9rem;
+}
+.titulo_galeria { 
+    display: flex;
+    justify-content: center;
+    font-family: 'Oswald', sans-serif;
+    font-size: 3.5rem;
+    color: black;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.texto_main_5{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    color: rgb(156, 146, 131);
+    font-size: 1rem;
+    padding: 0.5rem;
+    padding-bottom: 3rem;
+}
+.imagenes_galeria{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.imagenes_galeria img{
+    height: 37.1rem;
+    padding: 0px;
+    margin: 0px;
+}
+.main_6{
+    padding-top: 0rem;
+    padding-bottom: 7rem ;
+}
+.subtitulo_precios{
+    display: flex;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: rgba(191, 146, 91, 1);
+    font-size: 0.9rem;
+}
+.titulo_precios { 
+    display: flex;
+    justify-content: center;
+    font-family: 'Oswald', sans-serif;
+    font-size: 3.5rem;
+    color: black;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.texto_main_6{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Inter', sans-serif;                               
+    color: rgb(156, 146, 131);
+    font-size: 1rem;         
+    padding: 0.5rem;
+}
+.preciosxservicios{
+    display: flex;
+    justify-content: center;
+}
+@media screen and (max-width: 755px){
+    .preciosxservicios{
+        flex-wrap: wrap;
+    }    
+}
+.cuadro{
+    border: 2px solid  rgba(191, 146, 91, 1);
+    border-radius: 6px;
+    height: 28rem;
+    width: 18rem;
+    margin: 0.5rem;
+    text-align: center;
+}
+.precioxsession{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin: 2rem 0px;
+}
+.tiposervicio{
+    margin: 2rem 0px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: rgba(191, 146, 91, 1);
+    font-size: 0.9rem;
+}
+.precioxsession1{
+    margin: 0px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 2rem;
+    color: #573c4d;
+}
+.session{
+    font-family: 'Inter', sans-serif;  
+    font-size: 0.75rem;
+    color: rgb(156, 146, 131);
+    margin: 0px;
+}
+.gris{
+    background: rgba(235, 232, 222, 1);
+}
+.cuadro ul{
+    list-style: none;
+    padding: 0px;
+    text-align: center;
+    font-family: 'Inter', sans-serif;                               
+    color: #848484;
+    font-size: 1rem;
+}
+.cuadro ul li{
+    padding: 1rem 0px;
+}
+.cuadro ul li a{
+    font-family: 'Inter', sans-serif;
+    color: white;  
+    text-decoration: none;
+    background: rgba(191, 146, 91, 1);
+    padding: 1.2rem 1.5rem;
+    border-radius: 30px;
+    position: relative;
+    bottom: -1.5rem;
+}
+.main_7{
+    background-color: rgba(235, 232, 222, 1);
+    margin-bottom: 0rem;
+    display: flex;
+    justify-content: center;
+}
+.testimony{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.subtitulo_testimony{
+    display: flex;
+    justify-content: flex-start;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: rgba(191, 146, 91, 1);
+    font-size: 0.9rem;
+}
+.titulo_testimony { 
+    display: flex;
+    justify-content: flex-start;
+    font-family: 'Oswald', sans-serif;
+    font-size: 3.5rem;
+    color: black;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+.texto_main_7{
+    display: flex;
+    justify-content: flex-start;
+    font-family: 'Inter', sans-serif;
+    color: rgb(156, 146, 131);
+    font-size: 1.3rem;
+    line-height: 2.5rem;
+    padding: 0.5rem;
+}
+.imagen_main_7{
+  height: 35rem;
+}
+.imagen_main_7 img{
+    margin: 0 2rem;
+    height: 35rem;
+}
+@media screen and (max-width: 831px) {
+    .imagen_main_7 img{
+        display: none;
+    }
+}
+.businessman {
+    display: flex;
+}
+.businessman img{
+    height: 5rem;
+    border-radius: 100%;
+    margin-right: 1.5rem;
+}
+.businessman1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.nombre_businessman{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 1.3rem;
+    margin-bottom: 0.75rem;
+}
+.cargo_businessman{
+    font-family: 'Inter', sans-serif;                               
+    color: #848484;
+    font-size: 0.9rem;
+    margin: 0px;
+    margin-bottom: 0.75rem;
+}
+footer{
+    background: #333333;
+    margin: 0px;
+    padding-top: 4rem;
+}
+.contenido_footer{
+    display: flex;
+    justify-content: center;
+}
+@media screen and (max-width:965px){
+    .contenido_footer{
+        flex-direction: column;
+    }    
+}
+.haircare_footer, .information_footer, .menu_footer{
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+.titulo_footer{
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    font-size: 2rem;
+}
+.texto_footer{
+    font-family: 'Inter', sans-serif; 
+    color: #c7c5c5;
+    font-size: 1rem;
+    text-decoration: none;
+    line-height: 2rem;
+}
+.lista_footer {
+    list-style: none;
+    padding: 0px;
+}
+.lista_footer li{
+    padding: 0.3rem;
+}
+.menu_footer ul{
+    list-style: none;
+    padding: 0px;
+}
+.menu_footer ul li{
+    padding: 0.3rem;
+}
+.telefono p{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: #f0eeee;
+    font-size: 1rem;
+    text-decoration: none;
+    line-height: 2rem;
+    margin: 0px;
+}
+.email p{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: #f0eeee;
+    font-size: 1rem;
+    text-decoration: none;
+    line-height: 2rem;
+    margin: 0px;
+}
+.have_a_questions{
+    margin-left: 9rem;
+}
+.ubicacion, .telefono, .email{
+    display: flex;
+    align-items: flex-start;
+}
+.ubicacion img, .telefono img, .email img{
+    padding-right: 1rem;
+}
+.ubicacion p{
+    margin: 0px;
+}
+@media screen and (max-width: 985px) {
+    .have_a_questions{
+        margin-left: 1rem;
+    }    
+}
+.derechos{
+    text-align: center;
+    margin-top: 3rem;
+    padding-bottom: 6rem;
+}
+.links_redes{
+    margin-top: 3rem;
+    margin-left: 0px;
+    padding-left: 0px ;
+}
